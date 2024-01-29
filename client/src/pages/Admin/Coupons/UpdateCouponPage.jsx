@@ -8,7 +8,7 @@ const UpdateCouponPage = () => {
 
   const navigate = useNavigate();
 
-  const apiUrl = import.meta.env.VITE_API_BASE_URL;
+  const apiUrl = process.env.VITE_API_BASE_URL
 
   const params = useParams();
   const couponId = params.id;

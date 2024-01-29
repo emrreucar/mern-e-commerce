@@ -25,7 +25,7 @@ function PrevBtn({ onClick }) {
 const Products = () => {
   const [products, setProducts] = useState([]);
 
-  const apiUrl = import.meta.env.VITE_API_BASE_URL;
+  const apiUrl = process.env.VITE_API_BASE_URL;
 
   useEffect(() => {
     const fetchProducts = async () => {

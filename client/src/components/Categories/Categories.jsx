@@ -7,7 +7,7 @@ import { message } from "antd";
 const Categories = () => {
   const [categories, setCategories] = useState([]);
 
-  const apiUrl = import.meta.env.VITE_API_BASE_URL;
+  const apiUrl = process.env.VITE_API_BASE_URL;
 
   useEffect(() => {
     const fetchCategories = async () => {

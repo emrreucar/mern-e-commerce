@@ -7,7 +7,7 @@ const CartCoupon = () => {
 
   const { cartItems, setCartItems } = useContext(CartContext);
 
-  const apiUrl = import.meta.env.VITE_API_BASE_URL;
+  const apiUrl = process.env.VITE_API_BASE_URL;
 
   const applyCoupon = async () => {
     if (couponCode.trim().length === 0) {

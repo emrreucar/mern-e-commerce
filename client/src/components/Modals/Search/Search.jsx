@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Search = ({ isSearchShow, setIsSearchShow }) => {
   const [searchResults, setSearchResults] = useState(null);
 
-  const apiUrl = import.meta.env.VITE_API_BASE_URL;
+  const apiUrl = process.env.VITE_API_BASE_URL;
 
   const handleCloseModal = () => {
     setIsSearchShow(false);

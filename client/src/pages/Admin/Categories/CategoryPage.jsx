@@ -9,7 +9,7 @@ const CategoryPage = () => {
 
   const navigate = useNavigate();
 
-  const apiUrl = import.meta.env.VITE_API_BASE_URL;
+  const apiUrl = process.env.VITE_API_BASE_URL;
 
   const columns = [
     {
@@ -108,7 +108,7 @@ const CategoryPage = () => {
         columns={columns}
         rowKey={(record) => record._id}
         loading={loading}
-        pagination= {{
+        pagination={{
           pageSize: 7,
         }}
       />

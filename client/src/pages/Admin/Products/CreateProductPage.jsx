@@ -8,7 +8,7 @@ const CreateProductPage = () => {
   const [categories, setCategories] = useState([]);
   const [form] = Form.useForm();
 
-  const apiUrl = import.meta.env.VITE_API_BASE_URL;
+  const apiUrl = process.env.VITE_API_BASE_URL;
 
   useEffect(() => {
     const fetchCategories = async () => {

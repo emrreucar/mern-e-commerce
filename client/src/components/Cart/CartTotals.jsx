@@ -5,8 +5,8 @@ import { Spin, message } from "antd";
 import { loadStripe } from "@stripe/stripe-js";
 
 const CartTotals = () => {
-  const stripePublicKey = import.meta.env.VITE_API_STRIPE_PUBLIC_KEY;
-  const apiUrl = import.meta.env.VITE_API_BASE_URL;
+  const stripePublicKey = process.env.VITE_API_STRIPE_PUBLIC_KEY;
+  const apiUrl = process.env.VITE_API_BASE_URL;
 
   const { cartItems } = useContext(CartContext);
   const [fastCargoChecked, setFastCargoChecked] = useState(false);
