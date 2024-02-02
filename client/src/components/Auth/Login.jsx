@@ -9,7 +9,7 @@ const Login = () => {
   });
 
   const navigate = useNavigate();
-  const apiUrl = process.env.VITE_API_BASE_URL;
+  const apiUrl = import.meta.env.VITE_API_BASE_URL;
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -59,7 +59,12 @@ const Login = () => {
             <span>
               Email address <span className="required">*</span>
             </span>
-            <input type="text" name="email" onChange={handleInputChange} required />
+            <input
+              type="text"
+              name="email"
+              onChange={handleInputChange}
+              required
+            />
           </label>
         </div>
         <div>

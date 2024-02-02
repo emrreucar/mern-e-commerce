@@ -5,7 +5,7 @@ const OrderPage = () => {
   const [dataSource, setDataSource] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  const MY_STRIPE_SECRET_KEY = process.env.VITE_API_STRIPE_SECRET_KEY;
+  const MY_STRIPE_SECRET_KEY = import.meta.env.VITE_API_STRIPE_SECRET_KEY;
 
   const columns = [
     {

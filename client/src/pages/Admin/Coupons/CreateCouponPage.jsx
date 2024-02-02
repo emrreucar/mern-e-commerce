@@ -5,7 +5,7 @@ const CreateCouponPage = () => {
   const [loading, setLoading] = useState(false);
   const [form] = Form.useForm();
 
-  const apiUrl = process.env.VITE_API_BASE_URL;
+  const apiUrl = import.meta.env.VITE_API_BASE_URL;
 
   const onFinish = async (values) => {
     setLoading(true);

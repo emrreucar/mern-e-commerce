@@ -9,7 +9,7 @@ const UpdateProductPage = () => {
   const [categories, setCategories] = useState([]);
 
   const [form] = Form.useForm();
-  const apiUrl = process.env.VITE_API_BASE_URL;
+  const apiUrl = import.meta.env.VITE_API_BASE_URL;
 
   const params = useParams();
   const productId = params.id;

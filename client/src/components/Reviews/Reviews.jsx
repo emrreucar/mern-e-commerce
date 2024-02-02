@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 const Reviews = ({ active, singleProduct, setSingleProduct }) => {
   const [users, setUsers] = useState([]);
 
-  const apiUrl = process.env.VITE_API_BASE_URL;
+  const apiUrl = import.meta.env.VITE_API_BASE_URL;
 
   const thisReview = [];
 
